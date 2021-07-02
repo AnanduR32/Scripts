@@ -11,5 +11,5 @@ user@pc$ :- python rm_files_with_pattern.py <Disk>:<Dir_path> <pattern>
 To reorganize files, especially useful when you download multiple series on telegram and have to reorganize them manually.
 
 ```console
-user@pc$ :- python reorg_download.py <Disk>:<Dir_path> <pattern/dir>
+user@pc$ :- python reorg_downloads.py <Disk>:<Dir_path> <pattern/dir>
 ```
