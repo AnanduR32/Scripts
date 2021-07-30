@@ -2,10 +2,11 @@ from tkinter import *
 import sys, os, re
 from pathlib import Path
 from tkinter import filedialog
+from PIL import ImageTk, Image
 
 root = Tk()
 
-buttonPathSelectIcon = PhotoImage(file = './images/folder.png')
+buttonPathSelectIcon = ImageTk.PhotoImage(Image.open('./images/folder.png'))
 
 def resource_path(relative_path):
         if hasattr(sys, '_MEIPASS'):
@@ -59,7 +60,7 @@ countLabel.grid(row=4,column=1)
 button_submit = Button(root, text="Submit", padx=10, command=SubmitClick)
 button_submit.grid(row=3,column=1)
 
-button_selectPath = Button(root, image=buttonPathSelectIcon, padx=20, pady=20, height=20, width=20, border=0, command=pathSelect)
+button_selectPath = Button(root, image=buttonPathSelectIcon, padx=25, pady=25, height=20, width=20, border=0, command=pathSelect)
 button_selectPath.grid(row=1,column=2)
 
 ## Input entry ## 
